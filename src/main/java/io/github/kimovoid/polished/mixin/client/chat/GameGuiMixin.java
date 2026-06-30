@@ -6,6 +6,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ChatMessage;
 import net.minecraft.client.gui.GameGui;
 import net.minecraft.client.gui.screen.ChatScreen;
+import org.lwjgl.Sys;
 import org.lwjgl.input.Mouse;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -31,6 +32,9 @@ public class GameGuiMixin {
         if (this.minecraft.screen instanceof ChatScreen) {
             int currentWheelDegrees = Mouse.getDWheel();
             int numberOfTurns = Math.round((float) currentWheelDegrees / 120.0f);
+            if (Sys.getVersion().startsWith("3")) {
+                numberOfTurns = currentWheelDegrees;
+            }
             this.chatOffset = this.chatOffset + numberOfTurns;
 
             if (this.chatOffset < 0) {
