@@ -1,0 +1,67 @@
+key.categories.debug=Modifiers
+key.zoom=Zoom
+key.debug.modifier=Debug Modifier
+key.debug.help=Print Help
+key.debug.reloadChunks=Reload Chunks
+key.debug.clearChat=Clear Chat
+key.debug.chunkBorders=Chunk Borders
+key.debug.hitboxes=Hitboxes
+key.debug.tooltips=Advanced Tooltips
+key.debug.reloadResources=Reload Resources
+
+polished.category.general=General
+polished.category.inventory=Inventory Tweaks
+polished.category.zoom=Zoom
+
+# Main config
+polished.config.modern-debug-screen=Modern Debug Screen
+polished.config.multiplayer-click-mining=Multiplayer Click Mining
+polished.config.front-perspective=Front Facing Perspective
+
+# Inventory config
+polished.config.inventory-tweaks=Enable
+polished.config.dragging=Inventory drag
+polished.config.drag-graphics=Inventory drag graphics
+polished.config.prefer-shift-lmb=Prefer shift + left-click
+polished.config.prefer-shift-rmb=Prefer shift + right-click
+polished.config.drop-key-inv=Drop key in inventories
+polished.config.drop-stack-key=CTRL key to drop stack
+polished.config.hotkey-swap=Hotkey swapping
+
+polished.config.craft-all=Craft maximum amount
+polished.config.shift-armor=Shift-click into armor
+polished.config.shift-furnace=Shift-click into furnace
+polished.config.shift-click-any-lmb=Shift + left-click any items
+polished.config.tweak-rmb=Right-click drag items same slot
+polished.config.tweak-lmb-pickup=Left-click pickup items
+polished.config.tweak-shift-lmb=Shift + left-click drag items
+polished.config.double-click=Double-click to fill stack
+
+# Zoom config
+polished.config.zoom-divisor=Zoom Divisor
+polished.config.zoom-speed=Animation Speed
+polished.config.zoom-scroll=Scroll While Zooming
+polished.config.zoom-decrease-sens=Decrease Sensitivity
+polished.config.zoom-smooth-camera=Smooth Camera
+
+# Multiplayer GUI
+multiplayer.hidden=Hidden
+
+multiplayer.title=Play Multiplayer
+multiplayer.edit=Edit
+multiplayer.delete=Delete
+multiplayer.join=Join Server
+multiplayer.connect=Connect
+multiplayer.directConnect=Direct Connect
+multiplayer.addServer=Add Server
+multiplayer.refresh=Refresh
+multiplayer.cancel=Cancel
+
+multiplayer.deleteConfirm=Are you sure you want to remove this server?
+
+multiplayer.editServerInfo=Edit Server Info
+multiplayer.serverName=Server Name
+multiplayer.serverAddress=Server Address
+multiplayer.showIp=Show IP:
+multiplayer.ping=Ping:
+multiplayer.pingWarning=WARNING: Pinging server may cause "End of stream" with DDOS protection!

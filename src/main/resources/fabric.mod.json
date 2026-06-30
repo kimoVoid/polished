@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "polished",
+	"version": "${version}",
+	"name": "Polished",
+	"description": "Much-needed tweaks and fixes for our beloved Beta 1.7.3.",
+	"authors": [
+		"kimoVoid"
+	],
+	"contact": {
+		"homepage": "https://github.com/kimoVoid/polished"
+	},
+	"license": "MIT",
+	"icon": "assets/polished/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"init": [
+			"io.github.kimovoid.polished.Polished"
+		],
+		"client-init": [
+			"io.github.kimovoid.polished.client.PolishedClient"
+		],
+		"server-init": [
+			"io.github.kimovoid.polished.server.PolishedServer"
+		],
+		"modmenu": [
+			"io.github.kimovoid.polished.client.config.ConfigModMenu"
+		]
+	},
+	"mixins": [
+		"polished.mixins.json"
+	],
+	"accessWidener": "polished.accesswidener",
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "1.0.0-beta.7.3",
+		"osl-entrypoints": ">=0.4.0"
+	}
+}

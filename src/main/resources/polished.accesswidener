@@ -1,0 +1,13 @@
+accessWidener v2 named
+accessible field net/minecraft/client/Minecraft INSTANCE Lnet/minecraft/client/Minecraft;
+accessible method net/minecraft/client/gui/GuiElement fillGradient (IIIIII)V
+accessible method net/minecraft/network/packet/Packet register (IZZLjava/lang/Class;)V
+accessible field net/minecraft/server/network/ConnectionListener socket Ljava/net/ServerSocket;
+accessible field net/minecraft/server/network/ConnectionListener pendingConnections Ljava/util/ArrayList;
+accessible field net/minecraft/server/network/ConnectionListener connectionCounter I
+accessible field net/minecraft/client/render/GameRenderer smoothUtilMouseX Lnet/minecraft/client/util/SmoothUtil;
+accessible field net/minecraft/client/render/GameRenderer smoothUtilMouseY Lnet/minecraft/client/util/SmoothUtil;
+accessible method net/minecraft/block/entity/FurnaceBlockEntity getFuelTime (Lnet/minecraft/item/ItemStack;)I
+accessible field net/minecraft/client/gui/screen/inventory/menu/FurnaceScreen furnace Lnet/minecraft/block/entity/FurnaceBlockEntity;
+accessible method net/minecraft/client/Minecraft forceReload ()V
+accessible field net/minecraft/client/render/entity/PlayerRenderer player Lnet/minecraft/client/render/model/entity/HumanoidModel;

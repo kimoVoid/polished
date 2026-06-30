@@ -1,0 +1,56 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.kimovoid.polished.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "client.autosave.WorldMixin",
+    "client.chat.GameGuiMixin",
+    "client.connection.ConnectionMixin",
+    "client.debug.EntityRenderDispatcherMixin",
+    "client.debug.GameGuiMixin",
+    "client.debug.GameOptionsMixin",
+    "client.debug.InventoryMenuScreenMixin",
+    "client.debug.MinecraftMixin",
+    "client.debug.WorldRendererMixin",
+    "client.entityjitter.EntityMixin",
+    "client.frontperspective.GameRendererMixin",
+    "client.frontperspective.MinecraftMixin",
+    "client.ghosttnt.TntBlockMixin",
+    "client.inventory.InventoryMenuScreenMixin",
+    "client.inventory.PlayerEntityMixin",
+    "client.misc.ScreenMixin",
+    "client.multiplayerclickmining.MultiplayerInteractionManagerMixin",
+    "client.multiplayerfootsteps.EntityMixin",
+    "client.multiplayerfootsteps.RemoteClientPlayerEntityMixin",
+    "client.multiplayerscreen.ReturnToMainMenuMixin",
+    "client.multiplayerscreen.TitleScreenMixin",
+    "client.playerlist.ConnectScreenMixin",
+    "client.playerlist.GameGuiMixin",
+    "client.resources.ResourceDownloaderMixin",
+    "client.zoom.GameRendererMixin",
+    "client.zoom.MinecraftMixin"
+  ],
+  "mixins": [
+    "common.connection.Connection$3Mixin",
+    "common.connection.Connection$4Mixin",
+    "common.connection.ConnectionMixin",
+    "common.ghast.GhastEntityMixin",
+    "common.rain.WorldMixin"
+  ],
+  "server": [
+    "server.autosave.WorldMixin",
+    "server.bowsounds.BowItemMixin",
+    "server.bowsounds.SkeletonEntityMixin",
+    "server.connection.ConnectionMixin",
+    "server.connection.ListenThreadMixin",
+    "server.disconnectspamfix.ServerLoginNetworkHandlerMixin",
+    "server.ping.ServerLoginNetworkHandlerMixin",
+    "server.ping.ServerPlayerEntityMixin",
+    "server.ping.ServerPlayNetworkHandlerMixin",
+    "server.spawnprotection.ServerPlayNetworkHandlerMixin"
+  ]
+}
