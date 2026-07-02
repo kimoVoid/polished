@@ -17,6 +17,7 @@ polished.category.zoom=Zoom
 polished.config.modern-debug-screen=Modern Debug Screen
 polished.config.multiplayer-click-mining=Multiplayer Click Mining
 polished.config.front-perspective=Front Facing Perspective
+polished.config.texture-packs-button=Texture Packs Button
 
 # Inventory config
 polished.config.inventory-tweaks=Enable

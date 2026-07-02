@@ -14,6 +14,7 @@ public class Config extends BaseConfig {
     public final BooleanOption modernDebugScreen = new BooleanOption("modern-debug-screen", "A modern look for the F3 screen with more info.", true);
     public final BooleanOption multiplayerClickMining = new BooleanOption("multiplayer-click-mining", "Allows you to click-mine blocks in multiplayer.", false);
     public final BooleanOption frontPerspective = new BooleanOption("front-perspective", "Front-facing perspective with F5.", true);
+    public final BooleanOption texturePacksButton = new BooleanOption("texture-packs-button", "Show texture packs button in-game.", true);
 
     // inventory tweaks
     public final BooleanOption enableInventoryTweaks = new BooleanOption("inventory-tweaks", "Disabling this will disable all inventory tweaks.", true);
@@ -80,7 +81,8 @@ public class Config extends BaseConfig {
         this.registerOptions("general",
                 modernDebugScreen,
                 multiplayerClickMining,
-                frontPerspective
+                frontPerspective,
+                texturePacksButton
         );
 
         this.registerOptions("inventory",

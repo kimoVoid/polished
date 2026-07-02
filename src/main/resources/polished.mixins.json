@@ -31,6 +31,7 @@
     "client.playerlist.ConnectScreenMixin",
     "client.playerlist.GameGuiMixin",
     "client.resources.ResourceDownloaderMixin",
+    "client.texturepacksbutton.OptionsScreenMixin",
     "client.zoom.GameRendererMixin",
     "client.zoom.MinecraftMixin"
   ],
