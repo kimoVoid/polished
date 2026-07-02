@@ -8,6 +8,7 @@ key.debug.chunkBorders=Chunk Borders
 key.debug.hitboxes=Hitboxes
 key.debug.tooltips=Advanced Tooltips
 key.debug.reloadResources=Reload Resources
+options.texturePacks=Texture Packs...
 
 polished.category.general=General
 polished.category.inventory=Inventory Tweaks
