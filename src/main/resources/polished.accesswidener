@@ -11,3 +11,13 @@ accessible method net/minecraft/block/entity/FurnaceBlockEntity getFuelTime (Lne
 accessible field net/minecraft/client/gui/screen/inventory/menu/FurnaceScreen furnace Lnet/minecraft/block/entity/FurnaceBlockEntity;
 accessible method net/minecraft/client/Minecraft forceReload ()V
 accessible field net/minecraft/client/render/entity/PlayerRenderer player Lnet/minecraft/client/render/model/entity/HumanoidModel;
+
+accessible field net/minecraft/network/Connection open Z
+accessible field net/minecraft/network/Connection closed Z
+accessible method net/minecraft/network/Connection read ()Z
+accessible method net/minecraft/network/Connection write ()Z
+accessible field net/minecraft/network/Connection output Ljava/io/DataOutputStream;
+accessible field net/minecraft/network/Connection disconnected Z
+accessible method net/minecraft/network/Connection handleException (Ljava/lang/Exception;)V
+accessible field net/minecraft/network/Connection sendQueue Ljava/util/List;
+accessible field net/minecraft/network/Connection delayedSendQueue Ljava/util/List;

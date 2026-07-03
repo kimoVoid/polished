@@ -36,8 +36,6 @@
     "client.zoom.MinecraftMixin"
   ],
   "mixins": [
-    "common.connection.Connection$3Mixin",
-    "common.connection.Connection$4Mixin",
     "common.connection.ConnectionMixin",
     "common.ghast.GhastEntityMixin",
     "common.rain.WorldMixin"
@@ -47,7 +45,7 @@
     "server.bowsounds.BowItemMixin",
     "server.bowsounds.SkeletonEntityMixin",
     "server.connection.ConnectionMixin",
-    "server.connection.ListenThreadMixin",
+    "server.connection.ConnectionListenerMixin",
     "server.disconnectspamfix.ServerLoginNetworkHandlerMixin",
     "server.ping.ServerLoginNetworkHandlerMixin",
     "server.ping.ServerPlayerEntityMixin",

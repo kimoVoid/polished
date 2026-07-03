@@ -17,7 +17,7 @@ import java.net.Socket;
 import java.util.HashMap;
 
 @Mixin(ConnectionListener.class)
-public class ListenThreadMixin implements ExtendedConnectionListener {
+public class ConnectionListenerMixin implements ExtendedConnectionListener {
 
     @Shadow private Thread thread;
     @Shadow public MinecraftServer server;
