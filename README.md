@@ -20,7 +20,7 @@ This list will be updated properly, for now you can just check the mixins and fi
 
 ## Dependencies
 - [Silk Config](https://github.com/kimoVoid/silk-config) for in-game settings.
-- [Ornithe Standard Libraries](https://modrinth.com/mod/osl) 0.18.0 or newer.
+- [Ornithe Standard Libraries](https://modrinth.com/mod/osl) 0.20.3 or newer.
 
 ## Usage
 1. Grab the Ornithe gen2 instance: https://ornithemc.net/ornithe-installer-rs/?prism&minecraft-version=b1.7.3&gen=2
