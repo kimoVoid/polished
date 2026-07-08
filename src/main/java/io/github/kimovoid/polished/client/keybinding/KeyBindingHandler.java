@@ -18,7 +18,7 @@ public class KeyBindingHandler {
         return code;
     }
 
-    public KeyBinding getKeybinding(String name, int keyCode, String category, boolean allowsConflicts) {
+    public KeyBinding getKeybinding(String name, int keyCode, boolean allowsConflicts) {
         return new KeyBinding(name, keyCode);
     }
 }

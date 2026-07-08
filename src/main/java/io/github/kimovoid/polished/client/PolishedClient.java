@@ -11,13 +11,13 @@ import io.github.kimovoid.polished.networking.PlayerInfoPayload;
 import net.fabricmc.loader.api.FabricLoader;
 import net.ornithemc.osl.config.api.ConfigManager;
 import net.ornithemc.osl.entrypoints.api.client.ClientModInitializer;
-import net.ornithemc.osl.keybinds.api.KeyBindingEvents;
+import net.ornithemc.osl.keybinds.api.KeybindEvents;
+import net.ornithemc.osl.keybinds.api.KeybindRegistry;
 import net.ornithemc.osl.lifecycle.api.client.MinecraftClientEvents;
 import net.ornithemc.osl.networking.api.client.ClientPlayNetworking;
 import org.lwjgl.input.Keyboard;
 
 import java.util.LinkedHashMap;
-import java.util.concurrent.ExecutionException;
 
 public class PolishedClient implements ClientModInitializer {
 
@@ -45,19 +45,19 @@ public class PolishedClient implements ClientModInitializer {
 		MinecraftClientEvents.TICK_START.register(mc -> Zoom.INSTANCE.tick());
 		MinecraftClientEvents.READY_WORLD.register(mc -> this.playerList.clear());
 
-		KeyBindingEvents.REGISTER_KEYBINDS.register(registry -> {
-			registry.register(this.keyBindingHandler.getKeybinding("key.playerlist", Keyboard.KEY_TAB, "key.categories.multiplayer", true));
-			registry.register(this.keyBindingHandler.getKeybinding("key.zoom", Keyboard.KEY_C, "key.categories.gameplay", true));
+		KeybindEvents.REGISTER_KEYBINDS.register(() -> {
+			KeybindRegistry.register(this.keyBindingHandler.getKeybinding("key.playerlist", Keyboard.KEY_TAB, false), "key.categories.multiplayer");
+			KeybindRegistry.register(this.keyBindingHandler.getKeybinding("key.zoom", Keyboard.KEY_C, false), "key.categories.gameplay");
 
 			if (hasModernControls) {
-				registry.register(this.keyBindingHandler.getKeybinding("key.debug.modifier", Keyboard.KEY_F3, "key.categories.debug", true));
-				registry.register(this.keyBindingHandler.getKeybinding("key.debug.reloadChunks", Keyboard.KEY_A, "key.categories.debug", true));
-				registry.register(this.keyBindingHandler.getKeybinding("key.debug.hitboxes", Keyboard.KEY_B, "key.categories.debug", true));
-				registry.register(this.keyBindingHandler.getKeybinding("key.debug.clearChat", Keyboard.KEY_D, "key.categories.debug", true));
-				registry.register(this.keyBindingHandler.getKeybinding("key.debug.chunkBorders", Keyboard.KEY_G, "key.categories.debug", true));
-				registry.register(this.keyBindingHandler.getKeybinding("key.debug.tooltips", Keyboard.KEY_H, "key.categories.debug", true));
-				registry.register(this.keyBindingHandler.getKeybinding("key.debug.help", Keyboard.KEY_Q, "key.categories.debug", true));
-				registry.register(this.keyBindingHandler.getKeybinding("key.debug.reloadResources", Keyboard.KEY_S, "key.categories.debug", true));
+				KeybindRegistry.register(this.keyBindingHandler.getKeybinding("key.debug.modifier", Keyboard.KEY_F3, true), "key.categories.debug");
+				KeybindRegistry.register(this.keyBindingHandler.getKeybinding("key.debug.reloadChunks", Keyboard.KEY_A, true), "key.categories.debug");
+				KeybindRegistry.register(this.keyBindingHandler.getKeybinding("key.debug.hitboxes", Keyboard.KEY_B, true), "key.categories.debug");
+				KeybindRegistry.register(this.keyBindingHandler.getKeybinding("key.debug.clearChat", Keyboard.KEY_D, true), "key.categories.debug");
+				KeybindRegistry.register(this.keyBindingHandler.getKeybinding("key.debug.chunkBorders", Keyboard.KEY_G, true), "key.categories.debug");
+				KeybindRegistry.register(this.keyBindingHandler.getKeybinding("key.debug.tooltips", Keyboard.KEY_H, true), "key.categories.debug");
+				KeybindRegistry.register(this.keyBindingHandler.getKeybinding("key.debug.help", Keyboard.KEY_Q, true), "key.categories.debug");
+				KeybindRegistry.register(this.keyBindingHandler.getKeybinding("key.debug.reloadResources", Keyboard.KEY_S, true), "key.categories.debug");
 			}
 		});
 

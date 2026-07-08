@@ -48,7 +48,7 @@ dependencies {
 	modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
 	modImplementation("com.periut:retrocommands:${project.retrocommands_version}") {transitive false}
 	modImplementation "io.github.kimovoid:silk-config:${project.silk_version}"
-	modImplementation files("libs/moderncontrols-1.0.0+b1.7.3.jar")
+	modImplementation "io.github.kimovoid:moderncontrols:${project.mc_version}"
 	modImplementation files("libs/fcreative-1.0.0+b1.7.3.jar")
 
 	implementation include('com.github.oshi:oshi-core:6.6.5')

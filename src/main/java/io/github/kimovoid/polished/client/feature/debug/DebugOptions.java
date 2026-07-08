@@ -22,7 +22,7 @@ public class DebugOptions {
         }
         
         // print help
-        if (key == keybinds.getKeyFromCode(Keyboard.KEY_Q)) {
+        if (key == keybinds.getKeyByName("key.debug.help", Keyboard.KEY_Q)) {
             this.printDebugMessage("Key bindings:");
             this.printKeyBinding(Keyboard.KEY_A, "Reload chunks");
             this.printKeyBinding(Keyboard.KEY_B, "Show hitboxes");

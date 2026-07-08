@@ -11,7 +11,7 @@ public class MCKeyBindingHandler extends KeyBindingHandler {
     }
 
     @Override
-    public KeyBinding getKeybinding(String name, int keyCode, String category, boolean allowsConflicts) {
-        return ModernControls.getCustomKey(name, category, keyCode, allowsConflicts);
+    public KeyBinding getKeybinding(String name, int keyCode, boolean allowsConflicts) {
+        return ModernControls.getCustomKey(name, keyCode, allowsConflicts);
     }
 }
