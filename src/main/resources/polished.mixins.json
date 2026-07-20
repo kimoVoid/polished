@@ -22,6 +22,7 @@
     "client.ghosttnt.TntBlockMixin",
     "client.inventory.InventoryMenuScreenMixin",
     "client.inventory.PlayerEntityMixin",
+    "client.listwidgetscroll.ListWidgetMixin",
     "client.misc.ScreenMixin",
     "client.multiplayerclickmining.MultiplayerInteractionManagerMixin",
     "client.multiplayerfootsteps.EntityMixin",
