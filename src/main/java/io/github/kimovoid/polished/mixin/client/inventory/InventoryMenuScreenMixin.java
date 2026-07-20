@@ -1,5 +1,6 @@
 package io.github.kimovoid.polished.mixin.client.inventory;
 
+import io.github.kimovoid.polished.Polished;
 import io.github.kimovoid.polished.client.PolishedClient;
 import io.github.kimovoid.polished.client.feature.inventorytweaks.CreativeIntegration;
 import io.github.kimovoid.polished.client.feature.inventorytweaks.InventoryTweaks;
@@ -860,9 +861,9 @@ public abstract class InventoryMenuScreenMixin extends Screen implements Invento
 
     @Inject(method = "keyPressed", at = @At("RETURN"))
     private void inventoryTweaks_keyPressed(char chr, int key, CallbackInfo ci) {
-        if (this.inventoryTweaks_isDisabled()) return;
-
-        if (this.slot == null) {
+        if (this.inventoryTweaks_isDisabled()
+                || this.slot == null
+                || this.minecraft.screen == null) {
             return;
         }
 
