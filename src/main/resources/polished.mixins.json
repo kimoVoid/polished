@@ -46,6 +46,7 @@
     "server.bowsounds.SkeletonEntityMixin",
     "server.connection.ConnectionListenerMixin",
     "server.connection.ConnectionMixin",
+    "server.connection.ServerPlayerEntityMixin",
     "server.disconnectspamfix.ServerLoginNetworkHandlerMixin",
     "server.ping.ServerLoginNetworkHandlerMixin",
     "server.ping.ServerPlayerEntityMixin",

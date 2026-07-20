@@ -44,4 +44,9 @@ public class ConnectionMixin {
             ((ExtendedConnectionListener) PolishedServer.SERVER.connections).close(this.socket);
         }
     }
+
+    @ModifyConstant(method = "tick", constant = @Constant(intValue = 1048576))
+    private int increaseOverflowSize(int constant) {
+        return 2097152;
+    }
 }
