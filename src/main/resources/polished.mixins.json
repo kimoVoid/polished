@@ -51,6 +51,7 @@
     "server.ping.ServerPlayerEntityMixin",
     "server.ping.ServerPlayNetworkHandlerMixin",
     "server.properties.MinecraftServerMixin",
+    "server.properties.ServerPlayerEntityMixin",
     "server.properties.ServerPlayNetworkHandlerMixin"
   ]
 }
