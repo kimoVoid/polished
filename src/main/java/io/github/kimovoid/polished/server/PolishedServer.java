@@ -23,7 +23,7 @@ public class PolishedServer implements ServerModInitializer {
         INSTANCE = this;
 
         /* Events */
-        MinecraftServerEvents.PREPARE_WORLD.register(server -> {
+        MinecraftServerEvents.LOAD_WORLD.register(server -> {
             SERVER = server;
             this.properties = new PolishedServerProperties(SERVER);
             Packet.register(254, false, true, ServerPingPacket.class);

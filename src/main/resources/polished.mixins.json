@@ -44,12 +44,13 @@
     "server.autosave.WorldMixin",
     "server.bowsounds.BowItemMixin",
     "server.bowsounds.SkeletonEntityMixin",
-    "server.connection.ConnectionMixin",
     "server.connection.ConnectionListenerMixin",
+    "server.connection.ConnectionMixin",
     "server.disconnectspamfix.ServerLoginNetworkHandlerMixin",
     "server.ping.ServerLoginNetworkHandlerMixin",
     "server.ping.ServerPlayerEntityMixin",
     "server.ping.ServerPlayNetworkHandlerMixin",
-    "server.spawnprotection.ServerPlayNetworkHandlerMixin"
+    "server.properties.MinecraftServerMixin",
+    "server.properties.ServerPlayNetworkHandlerMixin"
   ]
 }

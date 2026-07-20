@@ -1,4 +1,4 @@
-package io.github.kimovoid.polished.mixin.server.spawnprotection;
+package io.github.kimovoid.polished.mixin.server.properties;
 
 import io.github.kimovoid.polished.server.PolishedServer;
 import net.minecraft.server.network.handler.ServerPlayNetworkHandler;
