@@ -1,6 +1,5 @@
 package io.github.kimovoid.polished.mixin.client.inventory;
 
-import io.github.kimovoid.polished.Polished;
 import io.github.kimovoid.polished.client.PolishedClient;
 import io.github.kimovoid.polished.client.feature.inventorytweaks.CreativeIntegration;
 import io.github.kimovoid.polished.client.feature.inventorytweaks.InventoryTweaks;
