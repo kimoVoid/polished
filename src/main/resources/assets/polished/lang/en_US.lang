@@ -68,3 +68,9 @@ multiplayer.serverAddress=Server Address
 multiplayer.showIp=Show IP:
 multiplayer.ping=Ping:
 multiplayer.pingWarning=WARNING: Pinging server may cause "End of stream" with DDOS protection!
+
+# Crash slab renamed
+tile.doubleSlab.stone.name=Smooth Stone Slab
+tile.doubleSlab.wood.name=Double Wood Slab
+tile.doubleSlab.sand.name=Double Sandstone Slab
+tile.doubleSlab.cobble.name=Double Cobblestone Slab
