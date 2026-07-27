@@ -25,15 +25,17 @@ import java.util.List;
 public class ConnectionMixin {
 
     @Shadow private PacketHandler listener;
-    @Shadow private boolean open;
+    @Shadow public boolean open;
     @Shadow private Socket socket;
+    @Shadow private int timeout;
 
     @WrapOperation(method = "read", at = @At(value = "INVOKE", target = "Ljava/util/List;add(Ljava/lang/Object;)Z", remap = false))
-    private boolean handlePingHost(List<Packet> list, Object obj, Operation<Boolean> original) {
-        if (obj instanceof PingHostPacket) {
+    private boolean instantReadPackets(List<Packet> list, Object obj, Operation<Boolean> original) {
+        if (obj instanceof PingHostPacket pingHostPacket) {
             ServerPlayNetworkHandler networkHandler = (ServerPlayNetworkHandler) this.listener;
-            ((PingHostHandler)networkHandler).handlePingHost((PingHostPacket) obj);
-            return false;
+            ((PingHostHandler)networkHandler).handlePingHost(pingHostPacket);
+            this.timeout = 0;
+            return true;
         }
         return original.call(list, obj);
     }

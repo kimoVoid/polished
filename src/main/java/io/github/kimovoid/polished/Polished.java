@@ -15,6 +15,8 @@ public class Polished implements ModInitializer {
     public static final Logger LOGGER = LogManager.getLogger("Polished");
     public static final NamespacedIdentifier PLAYER_INFO_CHANNEL =
             ChannelRegistry.register(ChannelIdentifiers.from("polished", "playerinfo"), true, false);
+    public static final NamespacedIdentifier SOUND_EVENT_CHANNEL =
+            ChannelRegistry.register(ChannelIdentifiers.from("polished", "soundevent"), true, false);
 
     @Override
     public void init() {

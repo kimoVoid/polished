@@ -10,6 +10,7 @@
     "client.autosave.WorldMixin",
     "client.chat.GameGuiMixin",
     "client.connection.ConnectionMixin",
+    "client.crashslabfix.ItemStackMixin",
     "client.debug.EntityRenderDispatcherMixin",
     "client.debug.GameGuiMixin",
     "client.debug.GameOptionsMixin",
@@ -23,6 +24,7 @@
     "client.inventory.InventoryMenuScreenMixin",
     "client.inventory.PlayerEntityMixin",
     "client.listwidgetscroll.ListWidgetMixin",
+    "client.logchatmessages.GameGuiMixin",
     "client.misc.ScreenMixin",
     "client.multiplayerclickmining.MultiplayerInteractionManagerMixin",
     "client.multiplayerfootsteps.EntityMixin",
@@ -32,6 +34,10 @@
     "client.playerlist.ConnectScreenMixin",
     "client.playerlist.GameGuiMixin",
     "client.resources.ResourceDownloaderMixin",
+    "client.sync.BoatEntityMixin",
+    "client.sync.ClientNetworkHandlerMixin",
+    "client.sync.FishingBobberEntityMixin",
+    "client.sync.WorldRendererMixin",
     "client.texturepacksbutton.OptionsScreenMixin",
     "client.zoom.GameRendererMixin",
     "client.zoom.MinecraftMixin"
@@ -48,6 +54,7 @@
     "server.connection.ConnectionListenerMixin",
     "server.connection.ConnectionMixin",
     "server.connection.ServerPlayerEntityMixin",
+    "server.disconnectspamfix.ConnectionMixin",
     "server.disconnectspamfix.ServerLoginNetworkHandlerMixin",
     "server.ping.ServerLoginNetworkHandlerMixin",
     "server.ping.ServerPlayerEntityMixin",
@@ -55,6 +62,14 @@
     "server.properties.MinecraftServerMixin",
     "server.properties.ServerPlayerEntityMixin",
     "server.properties.ServerPlayNetworkHandlerMixin",
-    "server.properties.WorldMixin"
+    "server.properties.WorldMixin",
+    "server.sync.entitymovement.TrackedEntityMixin",
+    "server.sync.fishingrod.TrackedEntityMixin",
+    "server.sync.sound.BlockPlaceSoundsMixin",
+    "server.sync.sound.ButtonBlockMixin",
+    "server.sync.sound.GhastEntityMixin",
+    "server.sync.sound.PressurePlateBlockMixin",
+    "server.sync.sound.TntBlockMixin",
+    "server.sync.spawner.MobSpawnerBlockEntityMixin"
   ]
 }

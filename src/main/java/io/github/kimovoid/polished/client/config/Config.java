@@ -15,6 +15,7 @@ public class Config extends BaseConfig {
     public final BooleanOption multiplayerClickMining = new BooleanOption("multiplayer-click-mining", "Allows you to click-mine blocks in multiplayer.", false);
     public final BooleanOption frontPerspective = new BooleanOption("front-perspective", "Front-facing perspective with F5.", true);
     public final BooleanOption texturePacksButton = new BooleanOption("texture-packs-button", "Show texture packs button in-game.", true);
+    public final BooleanOption logChatMessages = new BooleanOption("log-chat-messages", "Logs chat messages in the game's console.", true);
 
     // inventory tweaks
     public final BooleanOption enableInventoryTweaks = new BooleanOption("inventory-tweaks", "Disabling this will disable all inventory tweaks.", true);
@@ -82,7 +83,8 @@ public class Config extends BaseConfig {
                 modernDebugScreen,
                 multiplayerClickMining,
                 frontPerspective,
-                texturePacksButton
+                texturePacksButton,
+                logChatMessages
         );
 
         this.registerOptions("inventory",

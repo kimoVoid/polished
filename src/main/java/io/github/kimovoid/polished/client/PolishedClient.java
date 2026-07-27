@@ -8,6 +8,7 @@ import io.github.kimovoid.polished.client.feature.zoom.Zoom;
 import io.github.kimovoid.polished.client.keybinding.KeyBindingHandler;
 import io.github.kimovoid.polished.client.keybinding.MCKeyBindingHandler;
 import io.github.kimovoid.polished.networking.PlayerInfoPayload;
+import io.github.kimovoid.polished.networking.SoundEventPayload;
 import net.fabricmc.loader.api.FabricLoader;
 import net.ornithemc.osl.config.api.ConfigManager;
 import net.ornithemc.osl.entrypoints.api.client.ClientModInitializer;
@@ -68,6 +69,11 @@ public class PolishedClient implements ClientModInitializer {
 			} else {
 				this.playerList.remove(payload.username);
 			}
+		});
+
+		ClientPlayNetworking.registerListener(Polished.SOUND_EVENT_CHANNEL, SoundEventPayload::new, (context, payload) -> {
+			context.ensureOnMainThread();
+			context.minecraft().world.playSound(payload.getX(), payload.getY(), payload.getZ(), payload.getSound(), payload.getVolume(), payload.getPitch());
 		});
 	}
 }

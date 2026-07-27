@@ -19,6 +19,7 @@ import java.util.List;
 public abstract class ConnectionMixin {
 
     @Shadow public abstract void send(Packet packet);
+    @Shadow private int timeout;
 
     @WrapOperation(
             method = "read",
@@ -27,12 +28,14 @@ public abstract class ConnectionMixin {
                     target = "Ljava/util/List;add(Ljava/lang/Object;)Z"
             )
     )
-    private boolean instantReadPackets(List<Packet> queue, Object p, Operation<Boolean> original) {
-        if (p instanceof PingHostPacket) {
+    private boolean instantReadPackets(List<Packet> queue, Object obj, Operation<Boolean> original) {
+        if (obj instanceof PingHostPacket) {
             this.send(new PingHostPacket());
+            this.timeout = 0;
             return true;
         }
-        return original.call(queue, p);
+
+        return original.call(queue, obj);
     }
 
     @WrapOperation(method = "tick",

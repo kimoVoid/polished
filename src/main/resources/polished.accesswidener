@@ -11,6 +11,10 @@ accessible method net/minecraft/block/entity/FurnaceBlockEntity getFuelTime (Lne
 accessible field net/minecraft/client/gui/screen/inventory/menu/FurnaceScreen furnace Lnet/minecraft/block/entity/FurnaceBlockEntity;
 accessible method net/minecraft/client/Minecraft forceReload ()V
 accessible field net/minecraft/client/render/entity/PlayerRenderer player Lnet/minecraft/client/render/model/entity/HumanoidModel;
+accessible field net/minecraft/entity/Entities KEY_TO_TYPE Ljava/util/Map;
+accessible field net/minecraft/entity/Entities TYPE_TO_ID Ljava/util/Map;
+accessible field net/minecraft/entity/Entities ID_TO_TYPE Ljava/util/Map;
+accessible field net/minecraft/entity/Entities TYPE_TO_KEY Ljava/util/Map;
 
 accessible field net/minecraft/network/Connection open Z
 accessible field net/minecraft/network/Connection closed Z
