@@ -1,6 +1,7 @@
 package io.github.kimovoid.polished.command;
 
 import com.periut.retrocommands.api.Command;
+import com.periut.retrocommands.util.ParameterSuggestUtil;
 import com.periut.retrocommands.util.SharedCommandSource;
 import io.github.kimovoid.polished.server.PolishedServer;
 import io.github.kimovoid.polished.server.feature.ping.PlayerPing;
@@ -42,5 +43,13 @@ public class PingCommand implements Command {
     @Override
     public boolean needsPermissions() {
         return false;
+    }
+
+    @Override
+    public String[] suggestion(SharedCommandSource source, int parameterNum, String currentInput, String totalInput) {
+        if (parameterNum == 1) {
+            return ParameterSuggestUtil.suggestPlayerName(currentInput, source.getName());
+        }
+        return new String[0];
     }
 }
