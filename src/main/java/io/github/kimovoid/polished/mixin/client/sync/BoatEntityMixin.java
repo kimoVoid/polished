@@ -24,7 +24,8 @@ public abstract class BoatEntityMixin extends Entity {
             at = @At(
                     value = "FIELD",
                     target = "Lnet/minecraft/world/World;isMultiplayer:Z",
-                    opcode = Opcodes.GETFIELD
+                    opcode = Opcodes.GETFIELD,
+                    ordinal = 0
             )
     )
     private void playBoatParticles(CallbackInfo ci) {
