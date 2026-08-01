@@ -1,6 +1,7 @@
 package io.github.kimovoid.polished;
 
 import io.github.kimovoid.polished.command.CommandRegistry;
+import io.github.kimovoid.polished.command.DifficultyCommand;
 import io.github.kimovoid.polished.command.PingCommand;
 import net.fabricmc.loader.api.FabricLoader;
 import net.ornithemc.osl.core.api.util.NamespacedIdentifier;
@@ -23,6 +24,7 @@ public class Polished implements ModInitializer {
         /* Retro Commands */
         if (FabricLoader.getInstance().isModLoaded("retrocommands")) {
             CommandRegistry.register(new PingCommand());
+            CommandRegistry.register(new DifficultyCommand());
         }
     }
 }
